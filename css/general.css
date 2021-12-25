@@ -34,6 +34,7 @@ paragraph default: 1.6
 
 --- 06 BORDER_RADIUS
 default: 9px
+medium: 11px
 
 --- 07 WHITESPACE
 
@@ -153,4 +154,7 @@ body {
 }
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+strong {
+  font-weight: 500;
 }
