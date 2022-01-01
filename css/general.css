@@ -54,7 +54,9 @@ html {
   /* font-size: 10px; */
   font-size: 62.5%;
   overflow-x: hidden;
-  scroll-behavior: smooth;
+
+  /* doesnot work on safari and microsoft edge */
+  /* scroll-behavior: smooth; */
 }
 body {
   font-family: "Rubik", sans-serif;

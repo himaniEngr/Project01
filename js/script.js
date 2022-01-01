@@ -23,6 +23,24 @@ const headerEl = document.querySelector(".header");
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
+//smooth scrolling animation
+const allLinks = document.querySelectorAll("a:link");
+// console.log(allLinks);
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+    console.log(href);
+
+    if (href == "#")
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+  });
+});
+
+//
 function checkFlexGap() {
   var flex = document.createElement("div");
   flex.style.display = "flex";
