@@ -110,7 +110,9 @@
     transform: translateX(100%);
     /* display: none; */
     opacity: 0;
+    /* make it inaccessible to mouse and keyboard */
     pointer-events: none;
+    /* make it invisible to screen-readers */
     visibility: hidden;
   }
   .nav-open .main-nav {
@@ -134,5 +136,16 @@
   }
   .nav-open .icon-mobile-nav[name="menu-outline"] {
     display: none;
+  }
+}
+/* for width 704 for smaller tablets */
+@media (max-width: 44em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .diets {
+    grid-column: 1/-1;
+    justify-self: center;
   }
 }
